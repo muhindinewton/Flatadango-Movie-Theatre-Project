@@ -38,18 +38,15 @@ This is a simple web-based movie ticket booking application that allows users to
 ## JSON Server Data Structure (db.json)
 ```json
 {
-  "films": [
-    {
-      "id": 1,
+      "id": "1",
       "title": "The Giant Gila Monster",
-      "poster": "image-url.jpg",
-      "runtime": 96,
-      "capacity": 50,
-      "tickets_sold": 5,
-      "showtime": "03:30PM"
+      "runtime": "108",
+      "capacity": 30,
+      "showtime": "04:00PM",
+      "tickets_sold": 30,
+      "description": "A giant lizard terrorizes a rural Texas community and a heroic teenager attempts to destroy the creature.",
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
     }
-  ]
-}
 ```
 
 ## How to Use
