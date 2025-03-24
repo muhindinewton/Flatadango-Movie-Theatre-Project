@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Fetch movies from the server
     function fetchMovies() {
-        fetch("http://localhost:3000/films")
+        fetch("https://flatadango-movie-theatre-project-2.onrender.com/films")
             .then(response => response.json()) // Parse JSON response
             .then(data => {
                 filmsList.innerHTML = ""; // Clear existing movie list
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateAvailableTickets(); // Update UI immediately
 
             // Send PATCH request to update tickets on the server
-            fetch(`http://localhost:3000/films/${currentMovie.id}`, {
+            fetch(`https://flatadango-movie-theatre-project-2.onrender.com/films${currentMovie.id}`, {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ tickets_sold: currentMovie.tickets_sold })
